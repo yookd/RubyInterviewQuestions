@@ -66,5 +66,9 @@ module RubyInterviewQuestions
       @head = nil
       @tail = 0
     end
+
+    def size
+      @length
+    end
   end
 end
