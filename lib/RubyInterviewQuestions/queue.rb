@@ -2,7 +2,7 @@ module RubyInterviewQuestions
   class Queue
     # Create new queue with given size
     # Default size is 0
-    def initialize(size=0)
+    def initialize(size=1)
       # Set head and tail; create new array
       @length = size
       self.reset
@@ -10,7 +10,7 @@ module RubyInterviewQuestions
 
     # Add given element to the queue
     def enqueue(element)
-      raise 'Queue is full' if @queue.full?
+      raise 'Queue is full' if self.full?
 
       @queue[@tail] = element
 
@@ -29,7 +29,7 @@ module RubyInterviewQuestions
 
     # Remove element from the queue and return it
     def dequeue
-      raise 'Queue is empty' if @queue.empty?
+      raise 'Queue is empty' if self.empty?
 
       el = @queue[@head]
 
