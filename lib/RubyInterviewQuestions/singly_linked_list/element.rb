@@ -1,10 +1,13 @@
 module RubyInterviewQuestions
-  class Element
-    attr_accessor :data, :next
+  class SinglyLinkedList
+    class Element
+      attr_accessor :data
+      attr_accessor :next
 
-    def initialize(list, data)
-      @list = list
-      @data = data
+      def initialize(list, data)
+        @list = list
+        @data = data
+      end
     end
   end
 end
