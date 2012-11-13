@@ -24,4 +24,19 @@ describe 'RubyInterviewQuestions::Queue' do
       @queue.size == 4
     end
   end
+
+  context 'Removing element from an empty queue' do
+    it 'should raise an exception' do
+      @queue = RubyInterviewQuestions::Queue.new(10)
+      expect { @queue.dequeue }.to raise_exception
+    end
+  end
+
+  context 'Adding element to a full queue' do
+    it 'should raise an exception' do
+      @queue = RubyInterviewQuestions::Queue.new
+      @queue.enqueue(2)
+      expect { @queue.enqueue(1) }.to raise_exception
+    end
+  end
 end

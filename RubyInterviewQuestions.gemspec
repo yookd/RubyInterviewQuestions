@@ -6,7 +6,6 @@ Gem::Specification.new do |s|
   s.description = 'Ruby implementation of data structures'
   s.authors = ['David Yoo']
   s.email = 'dkyoo10@gmail.com'
-  s.files = ['lib/RubyInterviewQuestions.rb']
   s.homepage = 'http://www.github.com/yookd/RubyInterviewQuestions'
   s.require_paths = ['lib']
   s.files = `git ls-files`.split("\n")
