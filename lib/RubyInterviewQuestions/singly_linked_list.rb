@@ -1,13 +1,5 @@
 module RubyInterviewQuestions
   class SinglyLinkedList
-    class Element
-      attr_accessor :next, :data
-      def initialize(list, data)
-        @list = list
-        @data = data
-      end
-    end
-
     # Set defaults
     def initialize
       @sentinel = RubyInterviewQuestions::SinglyLinkedList::Element.new(self, nil)
